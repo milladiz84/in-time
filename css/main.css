@@ -10,7 +10,7 @@ header{
 	background: #f5f8fb;
 }
 .header{
-	width: 1278px;
+	width: 1280px;
 	margin: 0 auto;
 	height: 100px;
 	display: flex;
@@ -37,7 +37,7 @@ nav{
   border-top: 1px solid #e0e9f0;    
 }
 .nav{
-  width: 1278px;
+  width: 1280px;
   margin: 0 auto;
   height: 51px;
   font-family: "rubik_mediumregular", sans-serif;
@@ -57,14 +57,14 @@ nav{
   text-decoration: none;
   color: #282b2f;
 }
-.nav2{
-  width: 1278px;
+.breadcrumbs{
+  width: 1280px;
   margin: 0 auto;
   height: 34px;
   font-family: "rubik_lightregular", sans-serif;
   margin-bottom: 86px;
 }
- .nav2 ul{
+ .breadcrumbs ul{
   display: flex;
   justify-content: flex-start;
   flex-direction: row; 
@@ -74,7 +74,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.nav2>ul>li>a{
+.breadcrumbs>ul>li>a{
   text-decoration: none;
   color: #282b2f;
 }
@@ -89,12 +89,13 @@ nav{
   font-family: 
 }
 .main{
-  width: 1278px;
+  width: 1280px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.main img{
+img{
   border-radius: 4px;
 }
 .main p{
@@ -111,7 +112,11 @@ main h1{
   line-height: 55px;
   padding-bottom: 41px;
 }
-
+main h2{  
+  font-size: 36px;
+  line-height: 55px;
+  padding-bottom: 10px;
+}
 main h3{   
   font-size: 28px;
   line-height: 38px;
@@ -125,7 +130,7 @@ main h4{
 .img1{
   padding: 3px 0 41px 0;
 }
-.article{
+.subtitle-article{
   font-family: 'rubikitalic', sans-serif;
   font-size: 20px;
   color: #546e7a;
@@ -136,6 +141,7 @@ main h4{
 .list-main{
   font-family: 'rubik_lightitalic', sans-serif;
   font-size: 16px;
+  line-height: 41px;
   color: #1976d2;
   padding-left: 25px;
   position: relative;
@@ -145,19 +151,20 @@ main h4{
   color: #1976d2;
   text-decoration: underline;
 }
+.list-main li{
+  position: relative;
+}
 .list-main li:before{  
   content: '';
   background: url(../images/bullet.png);
   width: 12px;
   height: 2px;
   position: absolute;
-  top: 10px;
-  left: 0; 
+  top: 18px;
+  left: -25px; 
 }
-.three-img{
-  width: 844px;
-  height: 300px;
-  
+.options{
+  color: #455a63;
 }
 .three-img img{
   padding-bottom: 39px;
@@ -168,4 +175,129 @@ main h4{
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
+}
+.ol{
+  list-style-type: decimal;
+  line-height: 39px;
+  color: #282b2f;
+}
+.ol li{
+  margin-left: 18px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'rubikregular';
+}
+.table {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #e0e9f0;
+}
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even){
+  background-color: #f8f8f8;
+}
+th{
+  font-family: "rubik_mediumregular", sans-serif;
+}
+.small-subtitle{
+  text-transform: uppercase;
+  font-family: "rubik_mediumregular", sans-serif;
+  margin-bottom: 40px;
+  display: flex;
+}
+.article{
+  border-bottom: 1px solid #e0e9f0;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.link{
+  font-family: 'rubikitalic', sans-serif;
+}
+.link a{
+  color: #1976d2;
+}
+aside{
+  width: 380px;
+}
+.img-aside{
+  padding: 30px 0 15px 0;
+}
+.subtitle-aside{
+  padding-top: 15px;
+  font-family: "rubik_mediumregular", sans-serif;
+  font-size: 22px;
+  display: block
+  color #282b2f;
+}
+.readmore{
+  font-family: "rubik_mediumregular", sans-serif;
+  font-size: 16px;
+  display: block
+  color: #009688;
+}
+.readmore a{
+  text-decoration: none;
+  color: #009688;
+}
+.news{
+  padding: 0 0 29px 0;
+  border-bottom: 1px solid #e0e9f0;
+}
+
+footer{
+  width: 100%;
+  border-top: 1px solid #e0e9f0;
+}
+.footer{
+  width: 1280px;
+  margin: 0 auto;
+  height: 113px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-footer{
+  font-size: 20px;
+  color: #546e7a;
+}
+.icon-footer ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; 
+  align-items: center; 
+}
+.icon-footer ul li{
+  margin-right: 31px;
+}
+.icon-footer ul li:first-child{
+  font-size: 32px;
+  margin-right: 20px;
+  color: #009688;
+}
+.icon-dribbble-logo:before {
+  content: "\e905";
+}
+.icon-instagram-logo:before {
+  content: "\e907";
+}
+.icon-facebook-logo:before {
+  content: "\e906";
+}
+.icon-linkedin-logo:before {
+  content: "\e904";
+}
+.logo-footer{
+  font-size: 16px;
+  font-family: 'rubikregular';
+}
+.time{
+  color: #bdc6ca;
+  font-size: 14px;
+  padding: 17px 0 26px 0;
+  display: block;
 }
