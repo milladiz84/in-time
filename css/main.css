@@ -116,6 +116,7 @@ main h2{
   font-size: 36px;
   line-height: 55px;
   padding-bottom: 10px;
+  padding-top: 50px;
 }
 main h3{   
   font-size: 28px;
@@ -148,6 +149,7 @@ main h4{
   margin-bottom: 30px;  
 }
 .list-main a{
+  font-family: 'rubik_lightitalic', sans-serif;
   color: #1976d2;
   text-decoration: underline;
 }
@@ -160,7 +162,7 @@ main h4{
   width: 12px;
   height: 2px;
   position: absolute;
-  top: 18px;
+  top: 11px;
   left: -25px; 
 }
 .options{
@@ -191,6 +193,7 @@ table {
 }
 .table {
   padding-bottom: 50px;
+  margin-bottom: 50px;
   border-bottom: 1px solid #e0e9f0;
 }
 th, td {
@@ -205,9 +208,9 @@ th{
 }
 .small-subtitle{
   text-transform: uppercase;
-  font-family: "rubik_mediumregular", sans-serif;
+  font: 22px/36px "rubik_mediumregular", sans-serif;
   margin-bottom: 40px;
-  display: flex;
+  display: block;
 }
 .article{
   border-bottom: 1px solid #e0e9f0;
@@ -238,6 +241,7 @@ aside{
   font-size: 16px;
   display: block
   color: #009688;
+  border-bottom: 1px solid #009688;
 }
 .readmore a{
   text-decoration: none;
@@ -247,7 +251,101 @@ aside{
   padding: 0 0 29px 0;
   border-bottom: 1px solid #e0e9f0;
 }
+.text-input, .search-form, .button, .txt-area{
+  width: 379px;
+  height: 52px;
+  border-radius: 4px;
+  font: 16px/26px "rubik_lightregular", sans-serif;
+  color: #bdc6ca;
+  border: 2px solid #e0e9f0;
+  padding: 0 15px;
+  margin-bottom: 16px;
+}  
+.search-form{
+  margin-bottom: 0;
+  padding-right: 60px; 
+}
+.search{
+  position: relative; 
+}
+.txt-area{
+  padding: 15px;
+}
+.icon-search:before {
+  content: "\e900";
+  font-size: 20px;
+  position: absolute;
+  top: 16px;
+  left: 333px;
+  color: #009688;
+  display: block;
+}
+.link-all-news{
+  width: 379px;
+  height: 52px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 2px solid #009688;
+  color: #009688;
+  display: block;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-news{
+  position: relative;
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+  font-size: 20px;
+  top: 10px;
+  left: 10px;
+  color: #009688; 
+  display: block;
+}
+.link-all-news a{
+  color: #009688;
+  font-family: "rubik_mediumregular", sans-serif;
+  font-size: 18px;
+  text-decoration: none; 
+}
+.link-news{
+  position: relative;
+}
+/*.icon-arrow-right2:before {
+  content: "\1f32b";
+  position: absolute;
+  font-size: 20px;
+  top: 19px;
+  left: 323px;
+  color: #009688;
+  display: block;
+}
 
+.link-all-news:before {
+  content: "";
+  background: url(../images/arrow-right.png);
+  width: 16px;
+  height: 14px;
+  position: absolute;
+  top: 18px;
+  left: 323px;
+  color: #009688;
+  display: block;
+}*/
+.button{
+  background: #009688;
+  font-family: "rubik_mediumregular", sans-serif;
+  font-size: 18px;
+  border: 0;
+  color: #ffffff;
+  margin-top: 24px;
+  padding: 0;
+}
+.txt-area{
+  height: 140px;
+}
 footer{
   width: 100%;
   border-top: 1px solid #e0e9f0;
@@ -262,7 +360,6 @@ footer{
   align-items: center;
 }
 .icon-footer{
-  font-size: 20px;
   color: #546e7a;
 }
 .icon-footer ul{
@@ -273,8 +370,9 @@ footer{
 }
 .icon-footer ul li{
   margin-right: 31px;
+  font-size: 20px;
 }
-.icon-footer ul li:first-child{
+.icon-footer ul li:hover{
   font-size: 32px;
   margin-right: 20px;
   color: #009688;
@@ -300,4 +398,144 @@ footer{
   font-size: 14px;
   padding: 17px 0 26px 0;
   display: block;
+}
+/* Tabs*/
+
+.tabs-nav ul, li{    
+  vertical-align: baseline;
+  font: 16px/26px "rubik_mediumregular", sans-serif;
+  top: 50%;
+      
+}
+.tabs{
+  font: 16px/26px "rubik_lightregular", sans-serif;
+  color: #546e7a;
+}
+.tabs-nav li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;    
+}
+.tabs-nav li a{
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;    
+  width: 250px;
+  margin-right: 4px;
+  border-color: #009688;
+  background: #ffffff;
+}
+.tabs-nav li a{
+  text-decoration: none;
+  border-bottom: none;
+}
+.tabs-nav .tab-active a {
+  background: #009688;
+  color: #ffffff;
+  cursor: default;
+   
+}
+.tabs-nav a {
+  background: hsl(120, 11%, 96%);
+  border: 2px solid #009688;
+  color: #009688;
+  display: block;
+  font-size: 16px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;    
+  width: 250px;
+}
+.tabs-nav li {
+  float: left;
+}
+.tabs-stage {
+  border-top: 2px solid #009688;
+  clear: both;
+  margin-bottom: 20px;
+  position: relative;
+  top: -1px;
+  width: 844px;
+}
+.tabs-stage p {
+  margin: 0;
+  padding-top: 23px;
+  color: #546e7a;
+    
+}
+
+/*
+ul, li, div {
+    background: hsla(0, 0%, 0%, 0);
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    font: 13px/20px "Droid Sans", Arial, "Helvetica Neue", "Lucida Grande", sans-serif;
+    text-shadow: 0 1px 0 hsl(0, 100%, 100%);
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.tabs-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tabs-nav li:first-child a {
+    border-right: 0;
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.tabs-nav .tab-active a {
+    background: hsl(0, 100%, 100%);
+    border-bottom-color: hsla(0, 0%, 0%, 0);
+    color: hsl(85, 54%, 51%);
+    cursor: default;
+}
+.tabs-nav a {
+    background: hsl(120, 11%, 96%);
+    border: 1px solid hsl(210, 6%, 79%);
+    color: hsl(215, 6%, 57%);
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 140px;
+}
+.tabs-nav li {
+    float: left;
+}
+.tabs-stage {
+    border: 1px solid hsl(210, 6%, 79%);
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -ms-border-radius: 0 0 6px 6px;
+    -o-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    border-top: 0;
+    clear: both;
+    margin-bottom: 20px;
+    position: relative;
+    top: -1px;
+    width: 281px;
+}
+.tabs-stage p {
+    margin: 0;
+    padding: 20px;
+    color: hsl(0, 0%, 33%);
 }

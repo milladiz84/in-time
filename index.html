@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">  
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
     
 </head>
     <body>
@@ -86,7 +86,7 @@
 					</article>
 					<section  class="table">
 						<table>
-							<caption class="small-subtitle">Таблица</caption>
+							<span class="small-subtitle">Таблица</span>
 							  <tr>
 								  <th>Время</th>
 								  <th>Тестовое название</th>
@@ -116,9 +116,34 @@
 								   <td><span class="link"><a href="#">Ссылка 3</a></span></td>
 							  </tr>							  
 						</table>
-					</section>    			
+					</section>
+                <!-- Tabs-->
+            <span class="small-subtitle">Табы</span>
+        <div class="tabs">
+            <ul class="tabs-nav">
+                <li class=""><a href="#tab-1" rel="nofollow">Активный таб</a>
+                </li>
+                <li class="tab-active"><a href="#tab-2" rel="nofollow">Неактивный таб</a>
+                </li>
+            </ul>
+            <div class="tabs-stage">
+                <div id="tab-1" style="display: none;">
+                    <p>Компания Rolex всегда осознавала важность проверки и демонстрации технических преимуществ часов Oyster в условиях, максимально приближенных к реальным. Поэтому спорт, авиация, экспедиции и автомобильные гонки до сих пор служат ей полигоном для испытания самых разных технических параметров.</p>
+                </div>
+                <div id="tab-2" style="display: block;">
+                    <p>Поэтому спорт, авиация, экспедиции и автомобильные гонки до сих пор служат ей полигоном для испытания самых разных технических параметров.</p>
+                </div>
+            </div>
+        </div>	
+                <!-- Tabs-->
     			</content>
     			<aside>
+                    <div class="search">
+                        <form>
+                            <input type="search" name="search" placeholder="Поиск" class="search-form">
+                            <span class="icon-search"></span>   
+                        </form>
+                    </div>
     				<h2>H2 Новости</h2>
     				<div class="news">    					
     					<img class="img-aside" src="images/img-watch01.png" alt="img-watch">
@@ -161,6 +186,34 @@
     						<span class="readmore"><a href="#">Читать полностью</a></span>
     					</article>			
     				</div>
+                    <div class="link-news">
+                       <span class="link-all-news"><a href="#">Перейти ко всем новостям</a></span>
+                      <!--<span class="icon-arrow-right2"></span>-->
+                    </div>                  
+
+                    <div class="register">
+                        <h2>Связаться с нами</h2>
+                        <p>Вы можете связаться с нами по интересующим вопросам, написав нам:</p>
+                        <form action="#">
+                            <fieldset>
+                                <div class="row">
+                                    <input type="text" class="text-input" placeholder="Имя"> 
+                                </div>
+                                <div class="row">
+                                    <input type="email" class="text-input" placeholder="E-mail">      
+                                </div>
+                                <div class="row">
+                                    <textarea name="" id="" cols="30" rows="10" class="txt-area" placeholder="Текст сообщения"></textarea>
+                                </div>
+                                <div class="row">
+                                    <input type="submit" value="Отправить сообщение" class="button">      
+                                </div>
+                                
+                            </fieldset>
+                            
+                        </form>
+                        
+                    </div>
 
     			</aside>    			
     		</div>
@@ -176,13 +229,13 @@
 	    			</ul>
 	    		</div>
 	    		<div class="logo-footer">
-	    				<span>	&copy; InTime, 2019 Все права защищены</span>
-
+	    				<span>	&copy; InTime, 2019 Все права защищены</span
 	    		</div>     		
     		</div> 		
     	</footer>
 
     		
-    	
+    	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="js/tabs.js"></script>
     </body>
 </html>
