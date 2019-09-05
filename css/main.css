@@ -5,6 +5,9 @@ body{
   font: 16px/26px "rubik_lightregular", sans-serif;
   color: #455a63;
 }
+a{
+  text-decoration: none;
+}
 header{
 	width: 100%;
 	background: #f5f8fb;
@@ -15,7 +18,7 @@ header{
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
+  align-items: center;;oj
 	background: #f5f8fb;
 }
 .phone-header{
@@ -30,20 +33,24 @@ header{
   left: -28px;
   color: #465a64;
 }
+                                             /* Nav */
 nav{
   width: 100%
   background: #fff;
   border-bottom: 1px solid #e0e9f0;
-  border-top: 1px solid #e0e9f0;    
+  border-top: 1px solid #e0e9f0;      
 }
 .nav{
   width: 1280px;
   margin: 0 auto;
   height: 51px;
+}
+.nav>ul>li>a {  
   font-family: "rubik_mediumregular", sans-serif;
   font-size: 18px;
+  color: #282b2f;
 }
-.nav ul{
+.first-list-nav{
   display: flex;
   flex-direction: row; 
   justify-content: space-between;  
@@ -52,11 +59,37 @@ nav{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
 }
-.nav>ul>li>a{
-  text-decoration: none;
+.first-list-nav li{
+  position: relative;
+}
+ul.first-list-nav li:hover ul{
+  display: block;
+  color: #00766b;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       .,
+}
+.list{
+  position: absolute;
+  display: none; 
+}
+.list li{
+  font: 15px/50px "rubik_mediumregular", sans-serif;
   color: #282b2f;
+  min-width: 150px;
+  text-align: center;
+  background: #f5f8fb;
+  display: block;
 }
+.list li a{
+  color: #282b2f;
+  padding: 10px;
+}
+.list li a:hover{
+  background-color: #009688;
+  color: white;
+}
+                                             /* Nav */
+
 .breadcrumbs{
   width: 1280px;
   margin: 0 auto;
