@@ -70,7 +70,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
-}
+}tfrhgheerthh
 .first-list-nav li{
   position: relative;
 }
@@ -491,6 +491,7 @@ footer{
   border-color: #009688;
   background: #ffffff;
 }
+
 .tabs-nav li a{
   text-decoration: none;
   border-bottom: none;
@@ -520,7 +521,7 @@ footer{
   margin-bottom: 20px;
   position: relative;
   top: -1px;
-  width: 844px;
+  width: 100%;
 }
 .tabs-stage p {
   margin: 0;
@@ -530,4 +531,7 @@ footer{
 .copy{
   font-size: 14px;
   letter-spacing: -0.2px;
+}
+.menu-toggle{
+  display: none;
 }
